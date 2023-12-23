@@ -1,0 +1,9 @@
+pypdf
+python-dotenv
+ctransformers==0.2.5
+sentence-transformers==2.2.2
+pinecone-client
+flask
+langchain==0.0.225
+
+-e .
