@@ -15,6 +15,7 @@ This chatbot is meant to answer all your questions related to BT203, BT204, BT20
 2. Also as I mentioned you can use any model of any number of parameter but do keep in mind that Larger size means smarter, but slower.
 3. I set the temperature value to 0.8. Now what's Temperature? Adjusts randomness of outputs, greater than 1 is random and 0 is deterministic to the point, 0.75 is a good starting value hence I used 0.8.
 4. Also you can change the number of tokens, a word is generally 2-3 tokens.
+5. In the `Line 23` of `app.py` change the `index_name` based upon your `index_name`.
 6. I used some randomly AI generated HTML CSS code So I dont take credit for this (Also dont judge me for this :)
 
 ![WhatsApp Image 2023-12-24 at 22 41 01_3fb144cf](https://github.com/suvraadeep/Course-ChatBot/assets/154406386/d3c06db2-9f2a-4b16-b48d-13c2b9adcd7a)
