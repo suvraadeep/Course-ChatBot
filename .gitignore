@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 #model used
-model/llama-2-13b-chat.ggmlv3.q8_0.bin
+model/llama-2-7b-chat.ggmlv3.q8_0.bin
 # Distribution / packaging
 .Python
 build/
