@@ -23,7 +23,7 @@ embeddings = download_hugging_face_embeddings()
 pinecone.init(api_key=PINECONE_API_KEY,
               environment=PINECONE_API_ENV)
 
-index_name="medical-bot"
+index_name="chatbot"
 
 #Loading the index
 docsearch=Pinecone.from_existing_index(index_name, embeddings)
@@ -33,7 +33,7 @@ PROMPT=PromptTemplate(template=prompt_template, input_variables=["context", "que
 
 chain_type_kwargs={"prompt": PROMPT}
 
-llm=CTransformers(model="model/llama-2-7b-chat.ggmlv3.q4_0.bin",
+llm=CTransformers(model="model/llama-2-7b-chat.ggmlv3.q8_0.bin",
                   model_type="llama",
                   config={'max_new_tokens':512,
                           'temperature':0.8})
@@ -50,7 +50,7 @@ qa=RetrievalQA.from_chain_type(
 
 @app.route("/")
 def index():
-    return render_template('chat.html')
+    return render_template('chats.html')
 
 
 
@@ -63,7 +63,5 @@ def chat():
     print("Response : ", result["result"])
     return str(result["result"])
 
-
-
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port= 8080, debug= True)
+    app.run(host="0.0.0.0", port= 8069, debug= True)
