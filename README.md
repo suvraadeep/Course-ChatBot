@@ -43,15 +43,17 @@ We will download all the Libs required altogether
 pip install -r requirements.txt
 ```
 
-### Create a `.env` file in the root directory and add all your credentials as follows:
+### Note: The book I used is stored in `Books` folder
+
+### Step 03- Create a `.env` file in the root directory and add all your credentials as follows:
 We will use Pinecone database for this project but again you can use ChromaDB or any database of your choice
+You need to generate it yourself 
 ```ini
 PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 PINECONE_API_ENV = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-
-### Download the quantized model from the link provided below.
+### Step 04- Download the quantized model from the link provided below.
 
 
 ```ini
@@ -69,18 +71,18 @@ https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML
 https://ai.meta.com/llama/
 
 ```
-
+### STEP 05- Run `helper.py`, `prompt.py`, `setup.py`, `store_index.py`
 ```bash
-# Finally run the following file after Running all others it all
+# Finally run the following file 
 app.py
 
 ```
-
+### Step 06- Running it Locally  
 ```bash
 # Finally paste it over your browser
 localhost:8069
 ```
-
+cheers ;)
 
 
 
