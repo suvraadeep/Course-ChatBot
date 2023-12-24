@@ -6,4 +6,5 @@ pinecone-client
 flask
 langchain==0.0.225
 
+
 -e .
