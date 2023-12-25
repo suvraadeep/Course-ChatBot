@@ -1,6 +1,6 @@
 # Course-ChatBot using Llama-2 7B model
 
-This chatbot is meant to answer all your questions related to BT203, BT204, BT204, trained using all the textbooks of the respective textbooks.
+This chatbot is meant to answer all your questions related to BT203, BT204, BT204, trained using all the textbooks of the respective courses.
 
 
 # Architecture 
