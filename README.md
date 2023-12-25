@@ -5,10 +5,10 @@ This chatbot is meant to answer all your questions related to BT203, BT204, BT20
 
 # Architecture 
 1. Extracted dats Books PDF
-2. Divided into text Chunks (750 in this case)
+2. Divided into text Chunks (750 in Llama 2 and 10,000 in Gemini pro)
 3. Using Embeedings
-4. Results stored
-5. Final Results using Llama 2 7B model (Y'll can use any model of your choice of any number of parameters)
+4. Vector storage (PINECONE for Llama 2 and Chroma for Gemini) then semantic and similarity search (Can use Cosine, Eucledian or any but in my opinion cosine should be used)
+5. Final refined Results using Llama 2 7B model (Y'll can use any model of your choice of any number of parameters)
 (6. Deployment using Streamlit or Flask)
 
 <img width="1035" alt="download (1)" src="https://github.com/suvraadeep/Course-ChatBot-using-Llama-2-7B-model-and-Gemini-Pro/assets/154406386/45d4efa0-dbb5-484e-8a94-5891e762c83c">
@@ -19,6 +19,7 @@ Implemented the same thing using Google-Gemini-Pro-API which you can find in `Co
 But Before everything let me drop some notes
 1. For embedding model in this case I implemented a google embeddings model `embedding-001`  unlike last time as we used a hugging face embedding model
 2. For Vector Database I used Chroma this time but few things to note again, Chroma is efficient for many use cases, it might not match Pinecone’s performance in certain high-throughput real-time scenarios as Pinecone excels at similarity search. ChromaDB is an open-source database that you need to set up and manage yourself. This can be a significant hurdle for users who don't have experience with database administration or who require a plug-and-play solution. Pinecone, on the other hand, is a managed service that takes care of all the infrastructure and maintenance, making it much easier to get started. However, if you're comfortable with managing your own infrastructure, appreciate the flexibility of open-source software, and have budget constraints, ChromaDB could be a viable option.
+3. I just implemented it in jupyter notebook instead of deploying it. But if you are cloning it then the architecture is same for both hence you can just and paste the same part of the code over the files created and edit it. 
 
 # NOTE!!!
 1. This model is Trained To run over Local CPU hence it might take some time (<2 min definetely) to get response.
