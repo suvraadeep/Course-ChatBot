@@ -10,8 +10,8 @@ This chatbot is meant to answer all your questions related to BT203, BT204, BT20
 4. Results stored
 5. Final Results using Llama 2 7B model (Y'll can use any model of your choice of any number of parameters)
 (6. Deployment using Streamlit or Flask)
-src="https://github.com/suvraadeep/Course-ChatBot-using-Llama-2-7B-model-and-Gemini-Pro/assets/154406386/45d4efa0-dbb5-484e-8a94-5891e762c83c">
 
+<img width="1035" alt="download (1)" src="https://github.com/suvraadeep/Course-ChatBot-using-Llama-2-7B-model-and-Gemini-Pro/assets/154406386/45d4efa0-dbb5-484e-8a94-5891e762c83c">
 
 # Update 25/12/2023
 
